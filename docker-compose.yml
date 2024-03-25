@@ -8,6 +8,8 @@ services:
     container_name: mainstack
     env_file:
       - .env
+    environment:
+      MONGODB_URL : mongodb+srv://thrindle:cdGWXFz4lrPuuBIW@cluster0.jx58dme.mongodb.net/
     ports:
       - "5000:5000"
     volumes:
